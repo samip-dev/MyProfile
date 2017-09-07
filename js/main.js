@@ -34,6 +34,12 @@
 		}
 	};
 
+	
+	
+	
+	
+	
+	
 	// Parallax
 	var parallax = function() {
 		$(window).stellar();
@@ -147,3 +153,21 @@
 
 
 }());
+
+
+
+
+
+	function SendMailSubmit(){
+		
+	var fname =	document.getElementById("fname").value;
+	alert(fname);
+
+		var lname =	document.getElementById("lname").value;	
+				alert(lname);
+				var email =	document.getElementById("email").value;	
+				var subject =	document.getElementById("subject").value;	
+				var message =	document.getElementById("message").value;	
+		SendMail(fname, lname, subject, message, email);
+	}
+	
